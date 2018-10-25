@@ -1,0 +1,23 @@
+#Created on: Oct-25-2018
+#Created by: Wendi YU
+# creating a leap year calculator
+
+number_of_year = int(input("Enter a year and we will calculate it is a leap year or not.   Year = "))
+
+if (number_of_year % 4 == 0 and number_of_year % 100 == 0 and number_of_year % 400 == 0) :
+  
+	print("It is a leap year! ")
+
+elif (number_of_year % 4 == 0 and number_of_year % 100 != 0) :
+
+  print("It is a leap year! ")
+  
+elif (number_of_year % 100 == 0 and number_of_year % 400 == 0) :
+
+  print ("It is a leap year!")
+
+else: 
+  
+	print( "It is not a leap year. ")
+  
+input()
